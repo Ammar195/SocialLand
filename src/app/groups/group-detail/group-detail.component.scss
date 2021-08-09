@@ -1,0 +1,443 @@
+#groupDetail{
+    display: inline-block;
+    width: 100%;
+    // max-width: 350px;
+    margin-top: 50px;
+}
+
+#groupDetails-header-gridDiv{
+    display: grid;
+    grid-template-columns: 10fr 5fr 5fr;
+    grid-template-rows: 1fr 75px 55px;
+}
+
+.groupDetails-header-mainDiv{
+    grid-column-start: span 3;
+    padding: 0px 14px;
+}
+
+.groupDetails-header-mainDiv > div{
+    position: relative;
+}
+
+.groupDetails-header-pic{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.groupDetail-header-about{
+    position: absolute;
+    bottom: 0;
+    background-color: orange;
+    height: 5vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.groupDetail-header-about > p{
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-top: 4px;
+}
+
+// --------------------------------------
+
+// .groupDetails-title-mainDiv{
+//     padding: 0px 14px;
+// }
+
+.groupDetails-title-mainDiv > h4{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #333131;
+}
+
+.groupDetails-title-info {
+    margin-left: 30px;
+    margin-top: 0px;
+    color: #504c4c;
+}
+
+.groupDetails-title-info > span{
+    font-size: small;
+    font-weight: 500;
+    color: #504c4c;
+}
+
+// -----------------------------------
+
+.groupDetails-invite-mainDiv{
+    grid-column-start: span 2;
+    padding: 0px 14px;
+    display: flex;
+}
+
+.groupDetails-invite-friends{
+    margin-top: 28px;
+    width: 75%;
+}
+.groupDetails-invite-friends > img{
+    width: 15%;
+    max-width: 37px;
+    margin-right: -5px;
+}
+.groupDetails-inviteBtn{
+    margin-top: 29px;
+    width: 22%;
+}
+
+.groupDetails-inviteBtn > button{
+    width: 99%;
+    border: 0;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    height: 35px;
+    font-size: small;
+}
+.groupDetails-inviteBtn > img{
+    display: none;
+    width: 80%;
+    min-width: 42px;
+    padding: 5px;
+    cursor: pointer;
+}
+// ----------------------------------
+
+.groupDetails-options-mainDiv{
+    grid-column-start: span 3;
+    padding: 6px 14px;
+}
+
+.groupDetails-options{
+    display: flex;
+}
+
+.borderOptionTop{
+    border-top: 1px solid #848484;
+    width: 97%;
+    margin: auto;
+}
+
+.groupOptions-mobile{
+    display: none;
+    margin-top: 3px;
+    width: 90%;
+}
+.groupOptions-mobile > select{
+    font-size: small;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f3eeee;
+    height: 34px;
+    padding: 5px;
+    margin-left: 9px;
+}
+
+.groupOptions-desktop{
+    font-size: small;
+    width: 90%;
+    padding: 6px;
+}
+
+.groupOptions-desktop > a{
+    color: #272626;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.groupDetails-settings{
+    background-color: #d2cbcb;
+    text-align: center;
+    padding: 3px;
+    margin-top: 3px;
+    border-radius: 6px;
+    width: 5%;
+    min-width: 30px;
+    cursor: pointer;
+}
+.groupDetails-settings > img{
+    width: 22%;
+    max-width: 7px;
+}
+
+//  ************************** ---------------------- **************************** 
+
+#groupDetails-body{
+    display: flex;
+    justify-content: center;
+}
+
+.groupDetails-leftDiv{
+    background-color: #eaf1ef;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    height: 18vh;
+}
+
+.groupDetails-rightDiv{
+    background-color: #e3e8e7;
+    width: 44%;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.groupDetails-leftDiv-postbox{
+    display: flex;
+}
+
+.groupDetails-leftDiv-postbox > img{
+    width: 11%;
+    min-width: 32px;
+}
+
+.groupDetails-leftDiv-postbox > input{
+    border: 0;
+    border-radius: 18px;
+    width: 85%;
+    margin-left: 7px;
+    background-color: white;
+    padding-left: 20px;
+}
+
+.groupDetails-leftDiv-postOptions{
+    display: flex;
+    font-size: small;
+    font-weight: 500;
+    margin-top: 17px;
+}
+
+.groupDetails-leftDiv-photoVideo{
+    display: flex;
+    justify-content: center;
+}
+.groupDetails-leftDiv-photoVideo > img{
+    width: 19%;
+}
+.groupDetails-leftDiv-photoVideo  span{
+    padding-left: 3px;
+}
+
+.groupDetails-leftDiv-tagPeople{
+    display: flex;
+    justify-content: center;
+}
+.groupDetails-leftDiv-tagPeople > img{
+    width: 21%;
+}
+.groupDetails-leftDiv-tagPeople  span{
+    padding-left: 3px;
+}
+
+.groupDetails-leftDiv-Feeling{
+    display: flex;
+    justify-content: center;
+}
+.groupDetails-leftDiv-Feeling > img{
+    width: 19%;
+}
+.groupDetails-leftDiv-Feeling  span{
+    padding-left: 3px;
+}
+
+.groupDetails-rightDiv-about > p{
+    font-size: small;
+}
+.groupDetails-rightDiv-public > p{
+    font-size: small;
+}
+.groupDetails-rightDiv-visible > p{
+    font-size: small;
+}
+.groupDetails-rightDiv-location > p{
+    font-size: small;
+}
+
+// *****************************************************************
+
+@media screen and (max-width: 1110px){
+    .groupDetails-leftDiv-postOptions{
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 1055px){
+    .postOptions-videoTxt{
+        display: none;
+    }
+    .postOptions-activityTxt{
+        display: none;
+    }
+
+    .groupDetails-leftDiv-Feeling > img{
+        width: 23%;
+    }
+    .groupDetails-leftDiv-photoVideo > img{
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 1130px){
+    .groupDetails-leftDiv-tagPeople > img{
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .groupDetails-title-mainDiv > h4{
+       font-size: larger;
+    }
+    
+    .groupDetails-title-info > span{
+        font-size: smaller;
+    }
+
+    .groupOptions-desktop{
+        width: 93%;
+    }
+    .groupOptions-desktop > a{
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #groupDetail{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .groupOptions-desktop{
+        display: none;
+    }
+
+    .groupOptions-mobile{
+        display: block;
+    }
+
+    .groupDetails-inviteBtn > img{
+        display: block;
+    }
+    .groupDetails-inviteBtn > button{
+        display: none;
+    }
+
+    .groupDetails-invite-friends > img{
+        width: 21%;
+    }
+    .groupDetails-invite-friends > img:nth-child(6){
+        display: none;
+    }
+    .groupDetails-invite-friends > img:nth-child(7){
+        display: none;
+    }
+
+    .groupDetails-title-mainDiv > h4{
+        font-size: large;
+     }
+     
+     .groupDetails-title-info > span{
+         font-size: small;
+     }
+     
+    .groupDetails-settings{
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 531px){
+    .groupDetails-leftDiv-photoVideo > img{
+        width: 35%;
+        min-width: 25px;
+    }
+    .groupDetails-leftDiv-photoVideo{
+        align-items: center;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .groupDetails-leftDiv-tagPeople > img{
+        width: 35%;
+        min-width: 25px;
+    }
+    .groupDetails-leftDiv-tagPeople{
+        align-items: center;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .groupDetails-leftDiv-tagPeople > span{
+        text-align: center;
+    }
+
+    .groupDetails-leftDiv-Feeling > img{
+        width: 35%;
+        min-width: 25px;
+    }
+    .groupDetails-leftDiv-Feeling{
+        align-items: center;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .groupDetails-leftDiv-postbox > input{
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .groupDetails-invite-friends > img{
+        width: 75%;
+    }
+
+    .groupDetails-invite-friends > img:nth-child(4){
+        display: none;
+    }
+    .groupDetails-invite-friends > img:nth-child(5){
+        display: none;
+    }
+
+    .groupDetails-leftDiv-postbox > input{
+        font-size: x-small;
+    }
+
+ 
+    .groupDetails-leftDiv-photoVideo > span{
+        font-size: x-small;
+    }
+    .groupDetails-leftDiv-tagPeople > span{
+        font-size: x-small;
+    }
+    .groupDetails-leftDiv-Feeling > span{
+        font-size: x-small;
+    }
+
+    .groupDetails-inviteBtn > img{
+        min-width: 38px;
+    }
+
+}
+
+@media screen and (max-width: 330px){
+    .groupDetails-invite-friends > img{
+        max-width: 31px;
+    }
+
+    .groupDetails-leftDiv{
+        height: 23vh;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<div class="mainDiv">
+   <!-- <app-user-accounts></app-user-accounts> -->
+   <img class="leftsideImg" src="../../assets/loginSideImage.png">
+
+   <div id="registration_div">
+      <form autocomplete="false">
+         <div class="inputDiv_firstname">
+            <input name="firstname" type="text" class="form-control" placeholder="First name">
+         </div>
+         <div class="inputDiv_surname">
+            <input name="surname" type="text" class="form-control" placeholder="Sur name">
+         </div>
+
+         <div class="inputDiv_email-mobile">
+            <input name="email-mobile" autocomplete="off" type="text" class="form-control"
+               placeholder="Email address or mobile number">
+         </div>
+
+         <div class="inputDiv_password">
+            <input name="password" type="password" class="form-control" placeholder="New password">
+         </div>
+
+         <div class="inputDiv_DOB">
+            <label class="label_dob_large-device">Date of birth</label>
+            <br>
+            <div class="dob_date-div">
+               <label class="dob_label_small-device">date</label>
+               <br class="dob_label_small-device">
+               <select class="form-control" id="dob_date">
+                  <option value="" selected disabled hidden>date</option>
+                  <option value="20"> </option>
+               </select>
+            </div>
+     
+           <div class="dob_month-div">
+            <label class="dob_label_small-device">month</label>
+            <br class="dob_label_small-device">
+            <select class="form-control" id="dob_month">
+               <option value="" selected disabled hidden>month</option>
+               <option value="Jan"> </option>
+            </select>
+           </div>
+        
+           <div class="dob_year-div">
+            <label class="dob_label_small-device">year</label>
+            <br class="dob_label_small-device">
+            <select class="form-control" id="dob_year">
+               <option value="" selected disabled hidden>year</option>
+               <option value="2020"> </option>
+            </select>
+           </div>
+           
+         </div>
+
+         <div class="inputDiv_gender">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-control">
+               <option value="" selected disabled hidden>Select gender</option>
+            </select>
+         </div>
+
+         <button class="form-control btn btn-success register-btn" type="button">Sign up</button>
+      </form>
+      <br>
+      <p class="agreement">By clicking Sign Up, you agree to our Terms. Learn how we collect, use and share your data in
+         our Data Policy and how we use cookies and similar technology in our Cookie Policy.</p>
+
+         <p class="goback-btn" (click)="updateToggle()"> Go back </p>
+   </div>
+</div>

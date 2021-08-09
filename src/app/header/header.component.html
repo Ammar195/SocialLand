@@ -1,0 +1,57 @@
+<header>
+  <div id="headerTitle">
+    <div class="site-userpic-mobile">
+      <img class="user-profilepic" src="../../assets/noProfile.png">
+      <span>Ammar Khan</span>
+    </div>
+    <div class="site-title-desktop">
+      <a routerLink="/" class="social_siteName">Social</a>
+      <a routerLink="/" class="land_siteName"> Land</a>
+    </div>
+  </div>
+  <div class="site-title-mobile">
+    <a routerLink="/" class="social_siteName">Social Land</a>
+  </div>
+  <nav class="header_nav">
+    <ul class="header_nav_ul">
+      <li class="headerLinks"><a>Notifications</a></li>
+
+      <li class="headerLinks"><a>Messages</a></li>
+
+      <li class="headerLinks" routerLink="/homepage/profile"><a>Profile</a></li>
+
+      <li class="headerLinks"><a>Logout</a></li>
+    </ul>
+  </nav>
+
+  <img (click)="updateDropdownStatus()" class="dropdownMenu" src="../../assets/dropdownMenu.png">
+</header>
+
+
+<div *ngIf="dropdownStatus" id="nav_dropdown">
+  <ul class="nav_dropdown-ul">
+    <li class="headerLinks"><a>Notifications</a></li>
+    <li class="headerLinks"><a>Messages</a></li>
+    <li class="headerLinks"><a>Profile</a></li>
+
+    <div id="borderLine"></div>
+
+    <li class="headerLinks"><a>Documents</a></li>
+    <li class="headerLinks"><a>Friends</a></li>
+    <li class="headerLinks"><a>Groups</a></li>
+    <li class="headerLinks"><a>Posts</a></li>
+    <li class="headerLinks"><a>Bookmarks</a></li>
+
+    <div id="borderLine"></div>
+    <li class="headerLinks"><a>Logout</a></li>
+  </ul>
+</div>
+
+<!-- <div class="flex-container">
+   <div class="item-1"> item no 1</div>
+   <div class="item-2"> item no 2</div>
+   <div class="item-3"> item no 3</div>
+   <div class="item-4"> item no 4</div>
+   <div class="item-5"> item no 5</div>
+   <div class="item-6"> item no 6</div>
+</div> -->

@@ -1,0 +1,174 @@
+.mainDiv{
+    // background: #f0f2f5;
+    width: 100%;
+    height: 97vh;
+    padding-top: 130px;
+}
+
+#registration_div{
+    position: absolute;
+    right: 2%;
+    display: inline-block;
+    width: 50%;
+    max-width: 433px;
+    // margin-right: 7px;
+    background-color: #fff;
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.1), 0 18px 16px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+    padding: 23px;
+    top: 13%;
+  }
+
+  .leftsideImg{
+    //background: url("../assets/loginSideImage.png");
+    width: 40%;
+    max-width: 450px;
+    background-repeat: no-repeat;
+    float: left;
+    // margin-top: 71px;
+  }
+
+  input{
+    background-color: #f9f9f9;
+  }
+
+  label{
+    color: #8a8d91;
+    font-size: 0.8rem;
+    padding-top: 10px;
+  }
+
+
+  #dob_date{
+    // width: 25%;
+    display: inline-block;
+  }
+  .dob_date-div{
+    display: inline-block; 
+    width: 25%;
+  }
+
+  #dob_month{
+    // /width: 40%;
+    display: inline-block;
+    // margin-left: 5%;
+  }
+  .dob_month-div{
+   display: inline-block; 
+   width: 40%;
+   margin-left: 5%;
+  }
+
+  #dob_year{
+    display: inline-block;
+    // width: 25%;
+    // margin-left: 5%;
+  }
+  .dob_year-div{
+    display: inline-block; 
+    width: 25%;
+    margin-left: 5%;
+   }
+
+  .inputDiv_firstname, .inputDiv_surname{
+    display: inline-block;
+    width: 48%;
+  }
+
+  input[name='surname']{
+    margin-left: 13px;
+  }
+
+  input[name='email-mobile'], input[name='password']{
+    margin-top: 8px;
+  }
+
+  .agreement{
+    font-size: 0.6rem;
+    color: #8a8d91;
+  }
+
+  .dob_label_small-device{
+    display: none;
+  }
+
+  .label_dob_large-device{
+    display: inline;
+  }
+
+  .register-btn{
+    margin-top: 25px;
+    background-color: #3bb93b;
+  }
+
+  .goback-btn{
+    text-align: center;
+    margin: 0;
+    background-color: #e1e4e6;
+    padding: 2px;
+    cursor: pointer;
+    color: #796f6f;
+  }
+
+  @media screen and (max-width: 725px){
+    .leftsideImg{
+      display: none;
+      // position: absolute;
+      // top: 3%;
+      // left: 19%;
+    }
+
+    #registration_div{
+      width: 77%;
+      right: 13%;
+      top: 10%;
+    }
+
+    .dob_label_small-device{
+      display: inline;
+    }
+
+    .label_dob_large-device{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .mainDiv{
+      padding-top: 55px;
+    }
+
+    #registration_div{
+      width: 90%;
+      position: static;
+      display: block;
+      margin: auto;
+    }
+
+    #dob_date{
+      font-size: smaller;
+    }
+    #dob_month{
+      font-size: smaller;
+    }
+    #dob_year{
+      font-size: smaller;
+    }
+    #gender{
+      font-size: smaller;
+    }
+
+    .dob_date-div{
+      width: 29%;
+    }
+    .dob_month-div{
+      width: 35%;
+      margin-left: 3%;
+    }
+    .dob_year-div{
+      width: 30%;
+      margin-left: 3%;
+    }
+
+  }

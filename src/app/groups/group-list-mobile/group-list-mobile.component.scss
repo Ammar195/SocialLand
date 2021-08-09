@@ -1,0 +1,103 @@
+#groupList-mobile{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+#groupList-mobile-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#groupList-mobile-body{
+    display: flex;
+    flex-direction: row;
+    background-color: #ecedf5;
+    border-radius: 8px;
+    padding: 13px;
+}
+
+h5{
+    color: #444040;
+    padding-left: 8px;
+    margin-top: 7px;
+    font-weight: 700;
+}
+
+.groupList-mobile-header_search{
+    position: relative;
+}
+
+.groupList-mobile-header_search > img{
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    width: 27px;
+}
+
+.searchFriend{
+    background-color: #e0e0e0;
+    border: 0;
+    border-radius: 14px;
+    font-size: small;
+    width: 91%;
+    height: 35px;
+    padding-left: 35px;
+    margin-left: 7px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group > img{
+    float: left;
+    width: 90%;
+    min-width: 70px;
+    border-radius: 10px;
+}
+
+.groupName{
+    text-align: center;
+    font-size: small;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 2px;
+    color: #2b2929;
+}
+
+.groupVisibilityType{
+    text-align: center;
+    font-size: smaller;
+    font-weight: 500;
+    color: #545252;
+    letter-spacing: 0.2px;
+}
+
+
+// ************************************************************************************88
+
+@media screen and (max-width: 550px){
+    #groupList-mobile-body > div:nth-child(6){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px){
+    #groupList-mobile-body > div:nth-child(5){
+         display: none !important;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .user-profilepic{
+        width: 36px;
+    }
+
+    .group > img{
+        min-width: 60px;
+    }
+}

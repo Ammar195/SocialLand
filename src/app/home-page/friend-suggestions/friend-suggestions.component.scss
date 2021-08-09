@@ -1,0 +1,398 @@
+#friendsList{
+   display: inline-block;
+   vertical-align: top;
+//    position: relative;
+//    left: 0;
+//    top: 0;
+   width: 30%;
+   margin-top: 58px;
+}
+
+.friend-searchbar{
+    position: relative;
+}
+
+.friend-searchbar > img{
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    width: 29px;
+}
+
+h5{
+    color: #444040;
+    padding-left: 8px;
+    margin-top: 7px;
+}
+
+.searchFriend{
+    background-color: #e0e0e0;
+    border: 0;
+    border-radius: 14px;
+    font-size: small;
+    width: 75%;
+    height: 35px;
+    padding-left: 35px;
+    margin-left: 7px;
+}
+
+.borderBtm{
+    border-bottom: 1px solid #afadad;
+    width: 90%;
+    margin-left: 6px;
+}
+
+.friendReqCount{
+    margin-left: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.viewReqTxt{
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #0062cc;
+    cursor: pointer;
+}
+
+// ----------------------------------
+#friendsRequests{
+    display: flex;
+    // margin-top: 12px;
+    margin-left: 2px;
+    flex-direction: column;
+}
+
+.request{
+    margin-top: 10px;
+    padding: 7px;
+    width: 100%;
+    max-width: 315px;
+}
+
+.request > img{
+    float: left;
+    width: 20%;
+    max-width: 60px;
+    margin-top: 3px;
+}
+
+.friendReq-name{
+    margin-bottom: 0;
+    font-size: small;
+    font-weight: 600;
+    padding-left: 2%;
+}
+
+.friendReq-time{
+   float: right;
+   font-size: small;
+   font-weight: 600;
+   padding-right: 15px;
+}
+
+.request-buttons-bigscreen > button{
+    width: 35%;
+    max-width: 113px;
+    min-width: 75px;
+    height: 32px;
+    font-size: smaller;
+    font-weight: 500;
+    margin-left: 5px;
+    padding-top: 4px;
+}
+
+.request-buttons-smallscreen{
+    display: flex;
+    display: none;
+}
+
+h6{
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+// .request-name{
+//     display: flex;
+//     flex-direction: column;
+//     margin-left: 5px;
+// }
+
+.peopleSuggested-name{
+    margin-left: 45px;
+}
+
+
+.people-name{
+    margin-bottom: 0;
+    font-size: small;
+    font-weight: 600;
+    padding-left: 2%;
+}
+
+.people-time{
+    font-size: smaller;
+    padding-left: 3px;
+}
+
+.people-buttons-bigscreen{
+    align-items: end;
+    display: flex;
+}
+
+.people-buttons-bigscreen > button{
+    width: 47%;
+    max-width: 97px;
+    // min-width: 75px;
+    height: 32px;
+    font-size: smaller;
+    font-weight: 500;
+    margin-left: 5px;
+    padding-top: 4px;
+}
+
+.people-buttons-bigscreen > button:nth-child(2){
+    display: none;
+}
+.people-buttons-bigscreen > button:nth-child(1){
+    display: block;
+}
+// ----------------------------------
+
+#friendTimeline{
+    display: inline-block;
+    vertical-align: top;
+    // position: relative;
+    // right: 0;
+    // top: 0;
+    width: 70%;
+    margin-top: 52px;
+
+    -webkit-box-shadow: -3px 2px 17px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 2px 17px -9px rgba(0,0,0,0.75);
+    box-shadow: -3px 2px 17px -9px rgba(0,0,0,0.75);
+}
+
+
+// ################################## MEDIA QUERIES #######################################
+
+@media screen and (max-width: 720px){
+    .request-buttons-bigscreen{
+        display: none;
+    }
+
+    .request-buttons-smallscreen{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .request-name{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .request-detail{
+        display: flex;
+    }
+
+    .request-buttons-smallscreen >img:nth-child(1) {
+        width: 27%;
+        font-size: smaller;
+        font-weight: 500;
+        margin-left: 48px;
+        padding-top: 4px;
+        cursor: pointer;
+    }
+    
+    .request-buttons-smallscreen >img:nth-child(2) {
+        width: 27%;
+        font-size: smaller;
+        font-weight: 500;
+        margin-left: 48px;
+        padding-top: 4px;
+        cursor: pointer;
+    }
+
+    .friendReq-time{
+        font-size: smaller;
+        font-weight: 500;
+    }
+
+    .request > img{
+        width: 23%;
+    }
+}
+
+
+
+
+
+
+
+
+#borderBottom{
+    border-bottom: 1px solid #a7a7a7;
+    width: 97%;
+    max-width: 850px;
+    position: absolute;
+    bottom: 55px;
+}
+
+#timeline-div{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+#timeline-header{
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 90%; 
+    height: 465px
+}
+
+.timeline-img{
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    max-width: 845px;
+    // min-width: 530px;
+    border-radius: 8px;
+    z-index: 8000;
+}
+
+.timeline-profilepic-div{
+    z-index: 8100;
+    position: absolute;
+    bottom: 57px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-profilepic{
+    width: 13%;
+    // position: absolute;
+    // bottom: 60px;
+    max-width: 135px;
+    min-width: 80px;
+    border-radius: 50%;
+    /* text-align: center; */
+    z-index: 8100;
+}
+
+.timeline-username{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    // position: absolute;
+    // bottom: 90px;
+    z-index: 8100;
+}
+
+.timeline-addbio{
+    text-align: center;
+    color: #3778bb;
+    font-weight: 700;
+    position: absolute;
+    bottom: 66px;
+    z-index: 8100;
+    cursor: pointer;
+}
+
+.timeline-options{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 16px;
+    padding: 7px;
+    // width: 100%;
+    // max-width: 865px;
+    z-index: 8100;
+}
+
+.timeline-options_web > a{
+    cursor: pointer;
+    margin-left: 23px;
+    font-size: small;
+    font-weight: 500;
+}
+
+#timeline-other-options{
+    border: 0;
+    width: 90px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.timeline-right-options{
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.timeline-editProfile{
+    position: relative;
+}
+.timeline-editProfile > button{
+    border: 0;
+    border-radius: 6px;
+    padding-left: 36px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: small;
+    font-weight: 500;
+}
+.timeline-editProfile > img{
+    position: absolute;
+    width: 15%;
+    left: 11px;
+    top: 9px;
+}
+
+// =================================================================================
+.timeline-body{
+    display: flex;
+    flex-direction: row;
+    /* position: fixed; */
+    /* top: 440px; */
+    // width: 81%;
+    max-width: 865px;
+    z-index: 8100;
+}
+
+
+// **********************************************************************************************
+@media screen and(max-width: 1125px){
+
+}
+
+@media screen and(max-width: 867px){
+    .people-buttons-bigscreen > button:nth-child(2){
+        display: block;
+    }
+    .people-buttons-bigscreen > button:nth-child(1){
+        display: none;
+    }
+}
+
+@media screen and(max-width: 823px){
+    .timeline-left-options nav a{
+        font-size: small;
+        margin-left: 10px;
+    }
+}
+
+@media screen and(max-width: 612px){
+    #timeline-other-options{
+        width: 100px;
+    }
+}
+

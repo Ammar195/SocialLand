@@ -1,0 +1,462 @@
+
+// ################################## USER CREATE-POST ################################################
+
+#userCreatePost-div{
+   // position: absolute;
+    position: relative;
+    margin: auto;
+    background-color: #f8f9f9;
+    width: 57%;
+    border: 1px solid #a7aaa7;
+    border-radius: 4px;
+    padding: 10px;
+    top: 50px;
+    // left: 20%;
+    // top: 8%;
+}
+
+#postSeenStatus{
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-left: 8px;
+    width: 90px;
+    height: 23px;
+    font-size: small;
+    font-weight: 500;
+    color: #5f5f5f;
+}
+
+.user_img-textarea{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.uploadfile-icon{
+    position: absolute;
+    bottom: 13px;
+    right: 7px;
+    width: 37px;
+    cursor: pointer;
+}
+
+.user_img-textarea > textarea{
+    resize: none;
+    width: 100%;
+}
+
+.user_img{
+    width: 10%;
+    min-width: 50px;
+    max-width: 60px;
+    float: left;
+}
+
+.post-button{
+    width: 50%;
+    margin-left: 143px;
+    margin-top: 8px;
+}
+
+.username{
+    font-weight: 700;
+    padding-left: 10px;
+    // letter-spacing: -1px;
+    font-size: small;
+    color: #6b6767
+}
+// ################################## ---------------- ################################################ 
+
+
+// ################################## USER CREATE-POST ################################################
+#userPosts-div{
+    position: relative;
+    margin: 10px auto;
+    background-color: #f8f9f9;
+    width: 57%;
+    border: 1px solid #a7aaa7;
+    border-radius: 4px;
+    padding: 10px;
+    // right: 0px;
+    // top: 342px;
+    right: 0px;
+    top: 60px;
+}
+
+#topComments{
+    font-size: small;
+    width: 125px;
+    border: 0;
+    background-color: #f8f9f9;
+    color: #21201f;
+    cursor: pointer;
+}
+
+.topComments-div{
+    text-align: right;
+}
+
+.postTime{
+    margin-left: 60px;
+    font-size: small;
+    font-weight: 500;
+    color: #5f5f5f;
+}
+
+.post-user_img{
+    width: 10%;
+    min-width: 50px;
+    max-width: 50px;
+    float: left;
+}
+
+.comments-div{
+    margin-top: 15px;
+}
+
+.comment-user_img{
+    width: 8%;
+    min-width: 40px;
+    max-width: 40px;
+    float: left;
+}
+
+.comment-body{
+    background-color: #e6e6e6;
+    border-radius: 13px;
+    margin-left: 5px;
+    max-width: 60%;
+    min-width: 17%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    display: inline-block;
+    position: relative;
+}
+
+.comment-username{
+    font-size: small;
+    font-weight: 500;
+}
+
+.comment-box{
+    display: flex;
+    position: relative;
+    margin-top: 5px;
+}
+
+.comment-box-input_div{
+    width: 90%;
+    position: relative;
+}
+
+.comment-box-emoji{
+    position: absolute;
+    width: 17px;
+    right: 46px;
+    top: 11px;
+    cursor: pointer;
+}
+.comment-box-cam{
+    position: absolute;
+    width: 20px;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+}
+
+.comment-box input{
+    border-radius: 20px;
+    border: 1px solid #9c9c98;
+    width: 100%;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size: small;
+    padding-left: 12px;
+}
+
+// .comment-box-input:focus{
+//     border-radius: 20px;
+//     border: 1px solid #9c9c98;
+// }
+
+.comment{
+    font-size: smaller;
+    margin: 0;
+}
+
+.comment-status{
+    font-size: 13px;
+    margin-left: 50px;
+}
+
+.comment-status > span{
+    margin-left: 5px;
+    user-select: none;
+}
+
+.comment-like:hover{
+   cursor: pointer;
+   text-decoration: underline;
+}
+.comment-reply:hover{
+    cursor: pointer;
+    text-decoration: underline;
+ }
+
+.userPost-body > p{
+    white-space: break-spaces;
+    font-size: small;
+}
+
+.likes{
+    background-color: #eaeaea;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.like_love{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+.comment_share{
+    display: inline-block;
+    position: relative;
+    right: 0;
+    width: 60%;
+    text-align: right;
+}
+
+.comment_share span{
+    font-size: smaller;
+    vertical-align: middle;
+}
+
+.post-liked{
+    width: 23px;
+}
+.post-loved{
+    width: 23px;
+    margin-left: -3px;
+}
+.post-shared{
+    width: 23px;
+    margin-left: 12px;
+}
+.post-commented{
+    width: 25px;
+}
+
+.totalLikes{
+    color: #403c3c;
+    font-size: medium;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.borderBottom{
+    border-bottom: 1px solid #989292
+}
+
+.like_comment img{
+    width: 25px;
+}
+
+.like_comment span{
+    font-size: smaller;
+    vertical-align: middle;
+}
+
+.likeme{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    width: 50%;
+    margin-top: 3px;
+    border-bottom: 2px;
+    margin-bottom: 7px;
+}
+
+.likeme > img {
+    margin-left: 4px;
+}
+
+.likeme > span {
+    margin-left: 4px;
+}
+
+.likecomment{
+    display: inline-block;
+    position: relative;
+    right: 0;
+    width: 50%;
+    text-align: right;
+}
+
+.likecomment > img {
+    margin-right: 4px;
+}
+
+.likecomment > span {
+    margin-right: 4px;
+}
+
+.comment-liked{
+    width: 18px;
+    position: absolute;
+    right: -25px;
+}
+.comment-loved{
+    width: 18px;
+    position: absolute;
+    right: -10px;
+}
+.comment-totalLikes{
+    position: absolute;
+    right: -37px;
+    font-size: small;
+    bottom: -12px;
+}
+
+.reply-box{
+    display: flex;
+    position: relative;
+    width: 85%;
+    margin-left: 53px;
+}
+
+.reply-box-emoji{
+    position: absolute;
+    width: 17px;
+    right: 41px;
+    top: 10px;
+    cursor: pointer;
+}
+.reply-box-cam{
+    position: absolute;
+    width: 20px;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.reply-box input{
+    border-radius: 20px;
+    border: 1px solid #9c9c98;
+    width: 100%;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size: small;
+    padding-left: 12px;
+}
+
+.reply-user_img{
+    width: 5%;
+    min-width: 33px;
+    max-width: 33px;
+    float: left;
+}
+
+.postImg{
+    width: 100%;
+}
+
+.reply-input-div{
+    width: 91%;
+    position: relative;
+}
+// ################################## ---------------- ################################################ 
+
+@media screen and (max-width: 980px){
+    #userCreatePost-div{
+        width: 53%;
+    }
+
+    #userPosts-div{
+        width: 53%;
+    }
+  }
+
+@media screen and (max-width: 885px){
+  #userCreatePost-div{
+      width: 49%;
+    //   left: 22%;
+  }
+
+  #userPosts-div{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 820px){
+    #userCreatePost-div{
+        width: 61%;
+        left: 93px;
+        margin: 0;
+    }
+
+    #userPosts-div{
+        width: 61%;
+        left: 93px;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 770px){
+    #userCreatePost-div{
+        width: 58%;
+        left: 90px;
+        margin: 0;
+    }
+
+    #userPosts-div{
+        width: 58%;
+        left: 90px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 720px){
+    #userCreatePost-div{
+        width: 55%;
+        left: 88px;
+        margin: 0;
+    }
+    #userPosts-div{
+        width: 55%;
+        left: 88px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 680px){
+    #userCreatePost-div{
+        width: 76%;
+        left: 88px;
+    }
+    #userPosts-div{
+        width: 76%;
+        left: 88px;
+    }
+}
+
+// -------------------------------------
+
+@media screen and (max-width: 500px){
+    #userCreatePost-div{
+        width: 99%;
+        left: 3px;
+    }
+    #userPosts-div{
+        width: 99%;
+        left: 3px;
+    }
+}

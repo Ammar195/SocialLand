@@ -1,0 +1,5 @@
+<app-login (toggleStatusEvent)="getToggleStatus($event)" *ngIf="!toggleValue"></app-login>
+
+<app-registration (toggleStatusEvent)="getToggleStatus($event)" *ngIf="toggleValue"></app-registration>
+
+<app-footer></app-footer>

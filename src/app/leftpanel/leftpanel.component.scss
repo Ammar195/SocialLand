@@ -1,0 +1,95 @@
+.leftside-ul{
+    list-style-type: none;
+    /* float: left; */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: #f7f7f7;
+    width: 200px;
+    margin-top: 48px;
+    height: 92vh;
+    z-index: 9000;
+}
+
+.ul_main-div-desktop{
+    text-align: left;
+    margin-top: 17px;
+    margin-left: 23px;
+}
+
+ul{
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    font-size: 0.95rem;
+    margin: 22px;
+    // border-bottom: 1px solid #eae9e9;
+    cursor: pointer;
+}
+
+.user_img{
+    margin-top: 12px;
+    // border: 1px solid #9a9393;
+    // border-radius: 49%;
+    width: 45%;
+}
+
+a{
+    color: #212529;
+}
+
+.ul_main-div-desktop{
+    display: block;
+}
+.ul_main-div-mobile{
+    display: none;
+}
+
+#chatIcon{
+    display: none;
+}
+#chatIcon > img{
+    width: 65%;
+    cursor: pointer;
+}
+
+// *******************************************************************************************8
+@media screen and (max-width: 820px){
+    .leftside-ul{
+        width: 70px;
+    }
+    .user_img{
+        width: 67%;
+    }
+
+    .ul_main-div-desktop{
+        display: none;
+    }
+    .ul_main-div-mobile{
+        display: block;
+    }
+
+    li > img{
+       width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #chatIcon{
+        display: block;
+        position: absolute;
+        bottom: 8%;
+    }
+}
+
+// -------------------------------------
+
+@media screen and (max-width: 500px){
+   aside{
+       display: none;
+   }
+}
+
+

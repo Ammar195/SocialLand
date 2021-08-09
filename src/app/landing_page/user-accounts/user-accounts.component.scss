@@ -1,0 +1,101 @@
+  .recentAccountPanel_Big{
+    display:inline-block;
+    width: 58%
+  }
+  .recentAccountPanel_Small{
+    display: none;
+  }
+
+  .recentAccBox{
+    display: inline-block;
+    background: #f5f6f7;
+    width: 140px;
+    max-width: 35%;
+    height: 30vh;
+    min-height: 150px;
+    box-shadow: 0 0 0 1px #dddfe2;
+    border-radius: 12px;
+    // margin-bottom: 84px;
+    margin-left: 14px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .recentAccBox > img{
+    position: absolute;
+    width: 31%;
+    left: 32%;
+    bottom: 33px;
+  }
+
+  .recentAccBox > img:hover{
+    animation: wiggle 700ms 0s infinite linear reverse;
+  }
+
+  .recentAccBox > p{
+    color:  var(--addAccount-txt-color, #5f97c7);
+    font-weight: 600;
+    font-size: small;
+    position: absolute;
+    left: 19%;
+    text-align: center;
+    top: 10px;
+  }
+
+  // ***********************************************************************************
+
+  @media screen and (max-width: 796px){
+    #login{
+      width: 47%;
+     }
+  }
+
+  @media screen and (max-width: 700px){
+    .recentAccountPanel_Big{
+      display: none;
+    }
+
+    .recentAccountPanel_Small{
+      display: inline-block;
+      position: relative;
+      width: 58%
+    }
+
+    .recentAccBox{
+      display: inline-block;
+      position: absolute;
+      left: 16%;
+      background: #f5f6f7;
+      width: 152px;
+      max-width: 47%;
+      height: 31vh;
+      box-shadow: 0 0 0 1px #dddfe2;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 524px){
+    .recentAccountPanel_Small{
+      display: none;
+    }
+
+    .recentAccBox{
+      left: 10%;
+    }
+  }
+
+  @media screen and (max-width: 590px){
+    .recentAccBox{
+      left: 8%;
+    }
+  }
+
+ @keyframes wiggle {
+   from{
+    transform: rotate(0);
+   }
+   to{
+    transform: rotate(-360deg);
+   }
+ }

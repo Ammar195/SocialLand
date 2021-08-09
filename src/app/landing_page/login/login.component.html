@@ -1,0 +1,45 @@
+<div class="mainDiv">
+  <app-user-accounts></app-user-accounts>
+  <!-- <img class="leftsideImg" src="../../assets/loginSideImage.png"> -->
+  <!-- <div class="recentAccountPanel_Big">
+     <div class="recentAccBox">
+     </div>
+
+     <div class="recentAccBox">
+     </div>
+  
+     <div class="recentAccBox">
+     </div>
+
+     <div class="recentAccBox">
+     </div>
+  </div> -->
+
+  <!-- <div class="recentAccountPanel_Small">
+    <div class="recentAccBox">
+  </div>
+ </div> -->
+
+  <div id="login">
+    <form>
+      <div class="inputDiv_username">
+        <input type="text" class="form-control" name="username" placeholder="username or email">
+      </div>
+      <div class="inputDiv_password">
+        <input type="password" class="form-control" name="password" placeholder="password">
+      </div>
+
+      <div class="login_btnMargin">
+        <button class="btn btn-primary form-control" routerLink="homepage/home" type="submit" style="outline: none">Login</button>
+      </div>
+
+      <p class="forgottenAcc">Forgotten account?</p>
+
+      <div class="borderBottom"></div>
+
+      <p class="notAmember">Not a memeber</p>
+
+      <button type="button" class="btn btn-success createAccount" style="outline: none" (click)="updateToggle()">Create account</button>
+    </form>
+  </div>
+</div>
